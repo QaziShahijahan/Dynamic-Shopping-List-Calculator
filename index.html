@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Shooping List App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <body>
+        <h1>Dynamic Shopping List</h1>
+        <div class="input-container">
+          <input type="text" id="item-name-input" placeholder="Enter item name" />
+          <input type="number" id="item-price-input" placeholder="Enter item price" />
+          <button id="add-button">Add</button>
+        </div>
+      
+        <table id="shopping-table">
+          <thead>
+            <tr>
+              <th>Item Name</th>
+              <th>Item Price</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <tr>
+              <td colspan="2" data-ns-test="grandTotal">Grand Total: 0</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <script src="script.js"></script>
+</body>
+</html>
